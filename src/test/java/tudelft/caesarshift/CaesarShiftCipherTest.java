@@ -9,7 +9,7 @@ public class CaesarShiftCipherTest {
     @CsvSource({
       "'abc', 3, 'def'", "'xyz', 2, 'zab'", "'xyz', -2, 'vwx'",
       "'abc', -2, 'yza'", "'abc', 0, 'abc'",
-      "'', 1, ''", "'aBc', 2, 'invalid'", "'ab5', 4, 'invalid'",
+      "'', 1, ''", "'aBc', 2, 'invalid'", "'{b}', 4, 'invalid'",
       "'abc', 25, 'zab'", "'abc', 26, 'abc'", "'abc', 27, 'bcd'",
       "' ', 2, 'invalid'",
     })
