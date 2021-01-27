@@ -8,7 +8,7 @@ public class InvoiceDao {
 
     private static Connection c;
 
-    public void InvoiceDao() {
+    public InvoiceDao() {
         try {
             if(c!=null) return;
 
@@ -36,10 +36,9 @@ public class InvoiceDao {
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        } finally {
-            return allInvoices;
-        }
-
+        } 
+        
+        return allInvoices;
     }
 
     public void save(Invoice inv) {

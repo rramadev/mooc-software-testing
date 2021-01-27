@@ -36,10 +36,9 @@ public class InvoiceDao {
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        } finally {
-            return allInvoices;
-        }
-
+        } 
+        
+        return allInvoices;   
     }
 
     public void save(Invoice inv) {
