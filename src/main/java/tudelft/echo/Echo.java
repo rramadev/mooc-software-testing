@@ -38,7 +38,7 @@ public class Echo {
     @NotNull
     public Echo process(@NotNull List<String> args) {
         // make private copy that supports removing (first) argument.
-        ArrayList<String> operands = new ArrayList(args);
+        ArrayList<String> operands = new ArrayList<String>(args);
 
         boolean trailingNewLine = true;
         result = "";
